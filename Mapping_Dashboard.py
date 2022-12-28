@@ -26,7 +26,7 @@ def read_csv(url):
     df = pd.read_csv(url)
     return df
     
-data_load_state = st.text('Loading data...')   
+
 gpkg_url = data_url + gpkg_file
 csv_url = data_url + csv_file
 districts_gdf = read_gdf(gpkg_url, 'karnataka_districts')
