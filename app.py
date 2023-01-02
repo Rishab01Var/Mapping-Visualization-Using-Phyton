@@ -18,7 +18,7 @@ def load_data():
 df = load_data()
 
 districts = df.DISTRICT.values
-districts = st.selectbox('Select a district',districts)
+districts = st.selectbox('Select a district from Karnataka State of India',districts)
 filtered = df[df['DISTRICT'] == districts] 
 
 col1, col2 , col3 = st.columns(3)
