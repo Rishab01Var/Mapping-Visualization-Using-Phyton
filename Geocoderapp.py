@@ -10,7 +10,7 @@ st.markdown('This app uses the [OpenRouteService API](https://openrouteservice.o
 address = st.text_input('Enter an address.')
 
 
-ORS_API_KEY = '5b3ce3597851110001cf6248531264c5afa84ce08ea22d7704db179f'
+ORS_API_KEY = st.secrets["ORS_API_KEY"]
 
 @st.cache
 def geocode(query):
